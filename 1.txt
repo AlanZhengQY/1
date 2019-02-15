@@ -4,9 +4,3 @@ git commit 需要先在.git/config里面配置用户名和邮箱
 或执行git config --global user.email AlanZhengQY@supcon.com
       git config --global user.name AlanZhengQY
 来配置全局用户，配完在根目录会有一个.gitconfig文件产生
-1111111111111
-2222222222222
-3333333333333
-4444444444444
-5555555555555
-6666666666666
