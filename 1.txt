@@ -4,3 +4,22 @@ git commit 需要先在.git/config里面配置用户名和邮箱
 或执行git config --global user.email AlanZhengQY@supcon.com
       git config --global user.name AlanZhengQY
 来配置全局用户，配完在根目录会有一个.gitconfig文件产生
+
+
+查看文件的修改状态
+git log :信息最详细
+git log --pretty=oneline:简洁信息
+git log --oneline:hash值缩短了，更简洁
+git reflog:Head@{移动到当前版本需要移动的步数}
+
+前进后退：hard参数
+	在本地库移动HEAD指针
+	重置暂存区
+	重置工作区
+(1)
+先git  reflog,
+然后git reset --hard [对应的relog展示的部分hash码]，就能进行相应的前进和后退
+
+(2)只能后退
+git reset --hard HEAD^^^:一^符号退一步
+或git reset --hard HEAD~3：波浪线带n表后退n步
