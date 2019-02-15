@@ -24,6 +24,8 @@ git reflog:Head@{移动到当前版本需要移动的步数}
 git reset --hard HEAD^^^:一^符号退一步
 或git reset --hard HEAD~3：波浪线带n表后退n步
 
-删除恢复
-如果已经提交过，可以用git reset --hard [对应的relog展示的部分hash码]恢复即可，如果add但没提交过
-则执行git reset --hard HEAD
+
+比较
+git diff [文件名]：比较工作区和暂存区的差异
+git diff HEAD^ [文件名]:比较工作区与暂存区历史版本的差异
+
