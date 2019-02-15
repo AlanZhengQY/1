@@ -29,3 +29,13 @@ git reset --hard HEAD^^^:一^符号退一步
 git diff [文件名]：比较工作区和暂存区的差异
 git diff HEAD^ [文件名]:比较工作区与暂存区历史版本的差异
 
+分支操作
+创建分支：git branch [分支名]
+查看分支：git branch -v
+切换分支：git checkout [分支名]
+合并分支：
+	第一步：切换到接收修改的分支（被合并，增加新内容，如master）上
+	git checkout[被修改分支名]
+	第二步：执行merge命令
+	git merge[有新内容的分支名]
+解决冲突
