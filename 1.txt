@@ -1,2 +1,6 @@
 git init
-git add
+git add 1.txt
+git commit 需要先在.git/config里面配置用户名和邮箱
+或执行git config --global user.email AlanZhengQY@supcon.com
+      git config --global user.name AlanZhengQY
+来配置全局用户，配完在根目录会有一个.gitconfig文件产生
