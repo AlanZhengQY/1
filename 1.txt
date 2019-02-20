@@ -60,3 +60,6 @@ git fetch [远程库地址别名][远程分支名]
     git checkout origin/master //可以查看拉取的文件
 git merge[远程库地址别名/远程分支名]
     git merge origin/master  //做一个合并
+或直接
+git pull [远程库地址别名][远程分支名]
+    git pull origin master //拉取加合并到本地
