@@ -55,6 +55,8 @@ git push origin master:注意要推送的分支
 远程库修改的拉取
 pull=fetch+merge
 
-git fetch origin master //只是拉取，不合并到本地
-git checkout origin/master //可以查看拉取的文件
-git merge origin/master  //做一个合并
+git fetch [远程库地址别名][远程分支名]
+    git fetch origin master //只是拉取，不合并到本地
+    git checkout origin/master //可以查看拉取的文件
+git merge[远程库地址别名/远程分支名]
+    git merge origin/master  //做一个合并
